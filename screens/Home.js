@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import GlobalStyles from '../utils/GlobalStyles';
-import { SafeAreaView, Text, View, ScrollView } from 'react-native';
+import { SafeAreaView, View, ScrollView, KeyboardAvoidingView, Platform } from 'react-native';
 import HeaderTabs from '../components/home/HeaderTabs';
 import SearchBar from '../components/home/SearchBar';
 import Categories from '../components/home/Categories';
@@ -38,19 +38,21 @@ export default function Home({ navigation }) {
 
     return (
         <SafeAreaView style={GlobalStyles.androidSafeArea}>
-            <View style={{ backgroundColor: "white", padding: 12 }}>
-                <HeaderTabs activeTab={activeTab} setActiveTab={setActiveTab} />
-                <SearchBar cityHandler={setCity} />
-            </View>            
-            <ScrollView showsVerticalScrollIndicator={false} style={{ backgroundColor: "white", padding: 12 }}>
-                <Categories />
-                <RestaurantItems
-                    restaurantData={restaurantData}
-                    navigation={navigation}
-                />
-            </ScrollView>
-            <Divider width={1} />
-            <BottomTabs />
+            <KeyboardAvoidingView>
+                <View style={{ backgroundColor: "white", padding: 12 }}>
+                    <HeaderTabs activeTab={activeTab} setActiveTab={setActiveTab} />
+                    <SearchBar cityHandler={setCity} />
+                </View>            
+                <ScrollView showsVerticalScrollIndicator={false} style={{ backgroundColor: "white", padding: 12 }}>
+                    <Categories />
+                    <RestaurantItems
+                        restaurantData={restaurantData}
+                        navigation={navigation}
+                    />
+                </ScrollView>
+                <Divider width={1} />
+                <BottomTabs />
+            </KeyboardAvoidingView>        
         </SafeAreaView>
     )
 };
