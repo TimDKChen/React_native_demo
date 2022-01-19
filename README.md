@@ -23,15 +23,15 @@
 
 Screen snapshots
 
-<img src=".\screenshot\Home.png" alt="Home" style="zoom: 50%;" />
+<img src=".\screenshot\Home.png" alt="Home" style="zoom: 33%;" />
 
 （Home screen）
 
-<img src=".\screenshot\restaurantDetail.png" alt="restaurantDetail" style="zoom: 50%;" />
+<img src=".\screenshot\restaurantDetail.png" alt="restaurantDetail" style="zoom: 33%;" />
 
 (Restaurant details screen)
 
-<img src="D:\android\UberCloneProject\screenshot\orderCompleted.png" alt="orderCompleted" style="zoom:50%;" />
+<img src=".\orderCompleted.png" alt="orderCompleted" style="zoom:33%;" />
 
 (Completed Order screen)
 
