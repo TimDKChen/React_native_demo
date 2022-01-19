@@ -23,15 +23,15 @@
 
 Screen snapshots
 
-<img src=".\screenshot\Home.png" alt="Home" style="zoom: 33%;" />
+<img src=".\screenshot\Home.png" alt="Home" style="width: 400px, object-fit: contain;" />
 
 （Home screen）
 
-<img src=".\screenshot\restaurantDetail.png" alt="restaurantDetail" style="zoom: 33%;" />
+<img src=".\screenshot\restaurantDetail.png" alt="restaurantDetail" style="width: 400px, object-fit: contain;" />
 
 (Restaurant details screen)
 
-<img src=".\orderCompleted.png" alt="orderCompleted" style="zoom:33%;" />
+<img src=".\screenshot\orderCompleted.png" alt="orderCompleted" style="width: 400px, object-fit: contain;" />
 
 (Completed Order screen)
 
